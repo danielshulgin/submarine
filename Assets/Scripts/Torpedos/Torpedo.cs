@@ -59,6 +59,7 @@ public class Torpedo : MonoBehaviour
         {
             GameObject go = Instantiate(AudioManager.instance.audioPlayerPrefab, this.transform.position, Quaternion.identity);
             go.GetComponent<AudioSource>().PlayOneShot(onDestroy[Random.Range(0, onDestroy.Count - 1)]);
+            Destroy(go.gameObject, 5);
         }
 
         if (!isPlayer)
