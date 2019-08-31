@@ -42,7 +42,9 @@ public class Radar : MonoBehaviour
         transform.GetChild(0).rotation = Quaternion.EulerAngles(0, 0, - angle);// .SetEulerAngles(new Vector3(0, 0, angle));
         line.SetPosition(1, pos);
 
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, pos - transform.position, lineLen);
+        RaycastHit2D hit = Physics2D.Raycast(this.transform.position, pos, lineLen * this.transform.lossyScale.y);
+
+        Debug.DrawRay(this.transform.position, pos, Color.red);
 
         if (hit.collider != null)
         {

@@ -36,6 +36,7 @@ class MapManager : MonoBehaviour
             Destroy(currentGo);
         }
         currentGo = GameObject.CreatePrimitive(PrimitiveType.Quad);
+       // currentGo.transform.position = new Vector3(-xLength / 2 * sideLength, -yLength / 2 * sideLength, 0);
         //var collider = currentGo.AddComponent(typeof(EdgeCollider2D)) as PolygonCollider2D;
         float salt = Random.Range(0f, 1f) * 0.1f;
         float perlinNoizeDenominator = 1f / sideLength / 2f + salt;
