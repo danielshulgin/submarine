@@ -764,7 +764,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1378155291}
   - component: {fileID: 1378155292}
-  - component: {fileID: 1378155293}
   m_Layer: 0
   m_Name: StartPoint
   m_TagString: Untagged
@@ -798,35 +797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e454ba2704c15546811dd14eddefe2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RegenerateButton: {fileID: 1174220798}
-  initialRoomTopLeftCorner: {x: 0, y: 100}
-  initialRoomTopRightBound: {x: 100, y: 100}
-  initialRoomBottomLeftBound: {x: 0, y: 0}
-  initialRoomBottomRightBound: {x: 100, y: 0}
-  spatialDivisionBottomBound: 0.42
-  spatialDivisionTopBound: 0.509
-  minRoomMargin: 0.104
-  maxRoomMargin: 0.245
-  spatialDivisionIterations: 4
---- !u!114 &1378155293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1378155290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a967c33c853ecb43b307afd6614f4b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  generatorStartPoint: {fileID: 1378155292}
-  button: {fileID: 1003602426}
-  height: 100
-  width: 100
-  noizeRation: 0.2
-  cellSideLength: 1.1
+  regenerateButton: {fileID: 1174220798}
+  rasterizeButton: {fileID: 1003602426}
+  args: {fileID: 11400000, guid: 08c5b434c7aae4141a4b15ff34cef241, type: 2}
   highlighted: {fileID: 2100000, guid: 1992fccb41acb6f488f3c8da277887f6, type: 2}
-  cellFilterCycles: 1
-  neighbourCountToLive: 6
-  neighbourCountToBorn: 8
